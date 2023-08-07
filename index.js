@@ -2,6 +2,7 @@ let green = document.getElementById("luzUno");
 let red = document.getElementById("luzDos");
 let ambar = document.getElementById("ambar")
 let reloj = document.getElementById("reloj")
+reloj.style.color = "red"
 
 function turnIntoRed(){
     if(red.style.backgroundColor !== "black"){
@@ -19,8 +20,6 @@ function turnIntoGreen(){
     } 
 }
 
-
-reloj.style.color = "red"
 function colorNumber(){
     if(reloj.style.color !== "green"){
         reloj.style.color = "green"
@@ -28,11 +27,6 @@ function colorNumber(){
         reloj.style.color="red"
     }
 }
-
-setInterval(turnIntoGreen, 10000)
-setInterval(turnIntoRed, 10000)
-setInterval(colorNumber, 10000)
-
 
 let segundos = -1;
 cargarSegundo();
@@ -54,5 +48,7 @@ function cargarSegundo(){
 }
 
 setInterval(cargarSegundo, 1000);
-
+setInterval(turnIntoGreen, 10000)
+setInterval(turnIntoRed, 10000)
+setInterval(colorNumber, 10000)
 
