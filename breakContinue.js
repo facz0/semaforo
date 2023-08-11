@@ -17,3 +17,17 @@ for(let i = 0; i < numeros.length; i++){
     console.log(numeros[i])
 }
 
+// Destructuración de arreglos y objetos
+// se trata de asignar el valor de los elementos a variables de manera independiente
+const objeto ={
+    nombre: "Fabrizio",
+    apellido: "Cossío",
+    edad: 23
+}
+
+let {nombre, apellido, edad} = objeto
+console.log(`Nombre ${nombre}, Apellido ${apellido}`)
+// ahora hay 3 variables: nombre, apellido, edad que tienen como valor asignado 
+// Fabrizio, Cossío y 23.
+
+
